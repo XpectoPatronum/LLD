@@ -12,12 +12,20 @@ public class App {
         RateLimiterService rateLimiterService = new RateLimiterService();
 
         User freeUser = new User("123", Tier.FREE);
+        User premiumUser = new User("456",Tier.PREMIUM);
 
-        System.out.println("=== Free User Requests ===");
-        for (int i = 1; i <= 100; i++) {
-            boolean allowed = rateLimiterService.allowRequest(freeUser);
-            System.out.println("Request " + i + " for Free User: " + (allowed ? "ALLOWED" : "BLOCKED"));
-            Thread.sleep(1000); // simulate delay between requests
+//        System.out.println("=== Free User Requests ===");
+//        for (int i = 1; i <= 100; i++) {
+//            boolean allowed = rateLimiterService.allowRequest(freeUser);
+//            System.out.println("Request " + i + " for Free User: " + (allowed ? "ALLOWED" : "BLOCKED"));
+//            Thread.sleep(1000); // simulate delay between requests
+//        }
+
+        System.out.println("\n=== Premium User Requests ===");
+        for (int i = 1; i <= 120; i++) {
+            boolean allowed = rateLimiterService.allowRequest(premiumUser);
+            System.out.println("Request " + i + " for Premium User: " + (allowed ? "ALLOWED" : "BLOCKED"));
+            Thread.sleep(1000);
         }
     }
 }

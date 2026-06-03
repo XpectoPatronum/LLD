@@ -26,7 +26,7 @@ public class RateLimiterService {
         rateLimiterMap.put(Tier.PREMIUM,
                 RateLimiterFactory.createRateLimiter(
                         RateLimiterAlgo.SLIDING_WINDOW,
-                        new RateLimiterConfig(60L,100L)
+                        new RateLimiterConfig(10L,10L)
                 )
         );
     }
