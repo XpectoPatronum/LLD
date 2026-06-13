@@ -3,10 +3,6 @@
  */
 package org.example;
 
-import org.example.ratelimiter.model.Tier;
-import org.example.ratelimiter.model.User;
-import org.example.ratelimiter.service.RateLimiterService;
-
 public class App {
 
 }
