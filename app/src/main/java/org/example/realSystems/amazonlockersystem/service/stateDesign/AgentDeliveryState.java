@@ -1,6 +1,6 @@
 package org.example.realSystems.amazonlockersystem.service.stateDesign;
 
-import org.example.amazonlockersystem.model.*;
+import org.example.realSystems.amazonlockersystem.model.*;
 import org.example.realSystems.amazonlockersystem.model.*;
 import org.example.realSystems.amazonlockersystem.model.Package;
 

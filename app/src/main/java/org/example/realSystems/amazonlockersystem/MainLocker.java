@@ -1,13 +1,13 @@
 package org.example.realSystems.amazonlockersystem;
 
-import org.example.amazonlockersystem.model.*;
+import org.example.realSystems.amazonlockersystem.model.*;
 import org.example.realSystems.amazonlockersystem.model.*;
 import org.example.realSystems.amazonlockersystem.model.Package;
 import org.example.realSystems.amazonlockersystem.repository.AgentRepository;
 import org.example.realSystems.amazonlockersystem.repository.LockerRepository;
 import org.example.realSystems.amazonlockersystem.repository.OtpRepository;
 import org.example.realSystems.amazonlockersystem.repository.PackageRepository;
-import org.example.amazonlockersystem.service.*;
+import org.example.realSystems.amazonlockersystem.service.*;
 import org.example.realSystems.amazonlockersystem.service.AgentService;
 import org.example.realSystems.amazonlockersystem.service.LockerService;
 import org.example.realSystems.amazonlockersystem.service.NotificationService;
