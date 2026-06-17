@@ -1,7 +1,6 @@
 package org.example.realSystems.atm.model;
 
 import lombok.Data;
-import org.example.realSystems.atm.service.AtmStateDesign.ATMState;
 
 @Data
 public class ATM {
