@@ -10,8 +10,8 @@ import java.util.List;
 public class Game {
     private final Board board;
     private Integer currentActivePlayers;
-    private List<Player> players = new ArrayList<>();
-    private OrchestratorService orchestratorService;
+    private final List<Player> players = new ArrayList<>();
+    private final OrchestratorService orchestratorService;
 
     public Game(Board board, List<Player> players, OrchestratorService orchestratorService) {
         this.board = board;
