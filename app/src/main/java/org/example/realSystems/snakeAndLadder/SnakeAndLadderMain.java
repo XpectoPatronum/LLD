@@ -4,6 +4,7 @@ import org.example.realSystems.snakeAndLadder.enums.ObstacleType;
 import org.example.realSystems.snakeAndLadder.factory.ObstacleFactory;
 import org.example.realSystems.snakeAndLadder.model.*;
 import org.example.realSystems.snakeAndLadder.service.DiceService;
+import org.example.realSystems.snakeAndLadder.service.Game;
 import org.example.realSystems.snakeAndLadder.service.OrchestratorService;
 
 import java.util.List;

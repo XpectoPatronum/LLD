@@ -1,7 +1,8 @@
-package org.example.realSystems.snakeAndLadder.model;
+package org.example.realSystems.snakeAndLadder.service;
 
 import org.example.realSystems.snakeAndLadder.enums.PlayerStatus;
-import org.example.realSystems.snakeAndLadder.service.OrchestratorService;
+import org.example.realSystems.snakeAndLadder.model.Board;
+import org.example.realSystems.snakeAndLadder.model.Player;
 
 import java.util.ArrayList;
 import java.util.List;
