@@ -69,13 +69,6 @@ public class MainATM {
         atmMachine.insertCard(userCard);
         atmMachine.verifyPin(userPin);
         atmMachine.selectOption();
-        atmMachine.dispenseCash(3500L);
-
-
-
-        atmMachine.insertCard(userCard);
-        atmMachine.verifyPin(userPin);
-        atmMachine.selectOption();
-        atmMachine.dispenseCash(1100L);
+        atmMachine.dispenseCash(2950L);
     }
 }

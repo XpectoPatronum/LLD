@@ -4,8 +4,8 @@ import org.example.realSystems.atm.model.Account;
 import org.example.realSystems.atm.model.AtmStatus;
 import org.example.realSystems.atm.model.Card;
 import org.example.realSystems.atm.service.AtmMachine;
-import org.example.realSystems.atm.service.cor.CashDispenser;
-import org.example.realSystems.atm.service.cor.CashDispensingSequence;
+import org.example.realSystems.atm.service.cor2.CashDispenser;
+import org.example.realSystems.atm.service.cor2.CashDispensingSequence;
 
 public class CashDispensingState implements ATMState{
 
@@ -46,13 +46,9 @@ public class CashDispensingState implements ATMState{
             System.out.println("Insufficient funds in ATM");
             return;
         }
-        if(cashDispenser.canDispense(atmMachine.getAtm(), amount)){
-            cashDispenser.dispense(atmMachine.getAtm(), amount);
-            Account ac = atmMachine.getAccountService().getAccount(atmMachine.getCardService().getAccountNumber(atmMachine.getCurrentCardInserted()));
-            ac.setBalance(ac.getBalance() - amount);
-        }else{
-            System.out.println("Amount cannot be dispensed with available denominations");
-        }
+        cashDispenser.dispense(atmMachine.getAtm(), amount);
+        Account ac = atmMachine.getAccountService().getAccount(atmMachine.getCardService().getAccountNumber(atmMachine.getCurrentCardInserted()));
+        ac.setBalance(ac.getBalance() - amount);
         atmMachine.ejectCard();
     }
 
